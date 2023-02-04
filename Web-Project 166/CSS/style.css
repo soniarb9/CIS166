@@ -1,0 +1,24 @@
+.header {
+	margin-bottom: 3em;
+	height: 5rem;
+	background-color: pink;
+}
+
+.main {
+	margin-bottom: 3em;
+	height: 25em;
+	background-color: pink;
+
+}
+
+.footer {
+	margin-bottom: 3em;
+	height: 2.5rem;
+	background-color: pink;
+		
+}
+.header {
+	display: flex;
+    justify-content: space-around;
+ }
+ 

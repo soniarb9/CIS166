@@ -6,29 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="..\CSS\style.css" />
-	<script src="jquery-3.6.1.min.js"></script>
+
     <title>CIS166</title>
+	<script>
+	$(document).ready(function(){
+  let img = $('img'),
+  src =  img.attr("src"),
+  altSrc = img.attr("data-alt-src");
+  
+  img.css({
+    "width": img.width(),
+    "height": img.height(),
+    "display": "block",
+    "background": "url("+src+")",
+    "transition": "all 0.6s ease-in-out"
+  })
+  img.attr("src", "");
+  img.attr("alt", "");
+      
+ img
+   .mouseenter(()=>{
+     img.css({
+      "background": "url("+altSrc+")",
+     })
+   })
+   .mouseleave(()=>{
+    img.css({
+      "background": "url("+src+")",
+    })
+   })
+})
+</script>
   </head>
-<script src=""></script>
 <body>
 
-
 <div class="header">
- <h1>Header</h1>
-  <a href = "history.html">Home</a>
- <a href = "history.html">History</a>
- <a href = "contact.html">Contact</a>
- <a href = "sourcecode.html">Source Code</a>
- 
+ <h1><a href = "template3.html">Images</a></h1>
+ <a href = "history.html">Javascript/JQuery</a>
+ <a href = "contact.html">Placeholder</a>
+ <a href = "sourcecode.html">JavaScript Form</a>
+ </div>
+
+
+<div class="main">
+
+<div class="animate seven">
+      <span>C</span><span>I</span><span>S</span>&nbsp;
+      <span>J</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span>
+          </div>
+
+
+ <div class="portfolio">
+
+        <div class="image1">
+            <img class="fit" src="..\Images/image2.jpg"
+                alt="DBZ1" />
+        </div>
+        <div class="image2">
+            <img class="fit" src="..\Images/image3.jpg"
+                alt="DBZ2"  />
+        </div>
+        <div class="image3">
+            <img class="fit" src="..\Images/image4.jpg"
+                alt="DBZ1">
+        </div>
+        <div class="image4">
+            <img class="fit" src="..\Images/image5.jpg"></div>
+	
+<div class="container">
+  <!--<div class="take-input">
+     <input type="text" placeholder="Write any text" />
+    <a href="javascript:void(0);">Enter Text</a>
+  </div>-->
+  
+</div>
 </div>
 
-<div class="main">Main
-<h2>« Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. »</h2>
-</div>
 
-<div class="footer">Footer</div>
+<div class="container">
+  <!--<div class="take-input">
+     <input type="text" placeholder="Write any text" />
+    <a href="javascript:void(0);">Enter Text</a>
+  </div>-->
+
+
+</div>
+<div class="container">
+  <!--<div class="take-input">
+     <input type="text" placeholder="Write any text" />
+    <a href="javascript:void(0);">Enter Text</a>
+  </div>-->
+
+</div>
+<script></script>
+<div class="footer"></div>
 <script>
-    alert( 'Welcome to the geolocater!!' );
   </script>
 </body>
 </html>

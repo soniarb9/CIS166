@@ -9,20 +9,67 @@
 	<script src="jquery-3.6.1.min.js"></script>
     <title>CIS166</title>
   </head>
-<script src=""></script>
+<script>
+}</script>
 <body>
 
 
 <div class="header">
- <h1>Header</h1>
-   <a href = "history.html">Home</a>
-  <a href = "history.html">History</a>
- <a href = "contact.html">Contact</a>
- <a href = "sourcecode.html">Source Code</a>
-</div>
+ <h1><a href = "template3.html">Images</a></h1>
+ <a href = "history.html">Javascript/JQuery</a>
+ <a href = "contact.html">Placeholder</a>
+ <a href = "sourcecode.html">JavaScript Form</a>
+ </div>
 
-<div class="main"><h2>« Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. »</h2>
-</div>
+<div class="main">
+
+<body>
+    <div class="section">
+        <!-- Form Part -->
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+            <form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="First Name" required>
+				<input type="text" class="input-field" placeholder="Last Name" required>
+				<input type="text" class="input-field" placeholder="Phone number" required>
+				<input type="text" class="input-field" placeholder="Zip code" required>
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Part -->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        // Register and login Function.
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
 
 <div class="footer">Footer</div>
 <script>
